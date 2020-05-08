@@ -137,9 +137,15 @@
                 num++;
                 cnt++;
                 level++;
-                console.log(num,cnt);
+                //console.log(num,cnt);
                 score+=Number(10);
-                location.href="game3.html?time="+time+"&score="+score+"&level="+level+"&lives="+lives;
+                if(level<16){
+                    location.href="game3.html?time="+time+"&score="+score+"&level="+level+"&lives="+lives;
+                }
+                else{
+                    location.href="result.html?time="+time+"&score="+score+"&level="+level;
+                }
+
             }
             else
             {
