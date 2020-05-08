@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<HEAD>
+<TITLE>INDEX</TITLE>
+</HEAD>
+<style tyle="text/css">
+@FONT-FACE{
+            font-family: 'machineat';
+            src:url(./font/BRANCHE_Demo.ttf);
+        }
+html,
+body {
+    margin:0;
+    padding:0;
+    height:100%;
+    background-image : url('./img/background.jpg');
+    background-repeat : no-repeat;
+    background-size : cover;
+}
+#wrapper {
+	position:relative;
+    min-height:100%;
+}
+#header {
+	height:70px;
+}
+#container {
+    padding:20px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:70px;   
+}
+#button{
+            width:200px;
+            height:100px;
+            font-size:80px;
+            /*background: url('./img/button.png') no-repeat; */
+            background-color:transparent;
+            background-size : 200px 100px;
+            cursor: pointer;
+            border: none;
+            font-family:machineat;
+            color :maroon;
+        }
+        #button:hover{
+            background-color :black;
+            color :white;
+        }
+</style>
+<BODY>
+<div id="wrapper">
+    <div id="header">
+
+    </div>
+    <div id="container">
+        <br><br>
+        <p align=center style='color:white;font-size:100px;font-family:machineat;'>Welcome <br> memory game</p> 
+        <div align="center" id='button_group'>
+            <input  id=button onclick='start()' type='button' value='START'></input>
+        </div>
+    </div>
+    <div id="footer">
+        <p align=center style='color:white;font-size:20px;vertical-align:bottom;font-family:machineat;'>made by KwonOSang</p>
+    </div>
+</div>
+<script>
+    function start(){
+            location.href="game.html";
+        }
+</script>
+</BODY>
+</HTML>
