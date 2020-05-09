@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>game</title>
+    <style type = "text/css">
+        @FONT-FACE{
+            font-family: 'machineat';
+            src:url(../font/BRANCHE_Demo.ttf);
+        }
+		table, tr, td{
+			border: none;
+		}
+        table{
+            width: 500px;
+            height : 500px;
+            margin : auto;
+            vertical-align : middle;
+        }
+        #button_group{
+           margin : auto;
+        }
+       
+        body{
+            background-image : url('../img/background.jpg');
+            background-repeat : no-repeat;
+            background-size : cover;
+        }
+        #button{
+            width:50px;
+            height:30px;
+            font-size:20px;
+            background-color :mintcream;
+            background-size : 100px 50px;
+            cursor: pointer;
+            border: none;
+            font-family:machineat;
+            color :maroon;
+        }
+        #button:hover{
+            background-color :black;
+            color :white;
+        }
+	</style>
+</head>
+<body>
+	<script src=../js/game2.js></script>
+    <br><br>
+    <div align="center" id='button_group'>
+        <input  id=button onclick='end()' type='button' value='END'></input>
+        <input  id=button onclick='check()' type='button' value='NEXT'></input>
+        <input  id=button  onclick='home()' type='button' value='HOME'></input>
+    </div>
+</body>
+</html>
